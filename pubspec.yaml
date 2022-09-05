@@ -13,12 +13,12 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   flutter_svg: ^1.1.4
-  dart_code_metrics: ^4.17.1
-  surf_lint_rules: ^1.5.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  dart_code_metrics: ^4.17.1
+  surf_lint_rules: ^1.5.0
 
 flutter:
   uses-material-design: true
