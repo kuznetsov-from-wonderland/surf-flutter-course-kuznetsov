@@ -2,6 +2,7 @@
 
 import 'dart:developer';
 import 'package:flutter/material.dart';
+import 'package:places/ui/screens/sight_list_screen.dart';
 
 void main() {
   runApp(const App());
@@ -17,45 +18,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyFirstWidget(
-        title: 'Flutter App',
-      ),
-    );
-  }
-}
-
-class MyFirstWidget extends StatefulWidget {
-  final String title;
-  const MyFirstWidget({Key? key, required this.title}) : super(key: key);
-
-  @override
-  State<MyFirstWidget> createState() => _MyFirstWidgetState();
-}
-
-class _MyFirstWidgetState extends State<MyFirstWidget> {
-  int _renderCounter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _renderCounter++;
-      log(_renderCounter.toString());
-    });
-  }
-
-  void _printCtx(BuildContext ctx) {
-    log(ctx.runtimeType.toString());
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // incrementCounter();
-    // print(context.runtimeType);
-    _printCtx(context);
-
-    return Container(
-      child: const Center(
-        child: Text('Hello!'),
-      ),
+      home: SightListScreen(),
     );
   }
 }
