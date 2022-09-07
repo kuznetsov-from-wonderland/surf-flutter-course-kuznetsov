@@ -1,6 +1,5 @@
 // ignore_for_file: member-ordering-extended
 
-import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:places/ui/screens/sight_list_screen.dart';
 
@@ -18,7 +17,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SightListScreen(),
+      home: const SightListScreen(),
     );
   }
 }
