@@ -1,7 +1,7 @@
 import 'package:places/domain/lat_lng.dart';
 
 class Sight {
-  final String name; // -  название достопримечательности
+  final String name; // - название достопримечательности
   final LatLng location;
   final String url; //- путь до фотографии в интернете
   final String details; //- описание достопримечательности
@@ -20,6 +20,7 @@ enum SightType {
   scyscrapper,
   square,
   monument,
+  hotel,
 }
 
 extension SightTypeExt on SightType {
@@ -31,6 +32,8 @@ extension SightTypeExt on SightType {
         return 'square';
       case SightType.monument:
         return 'monument';
+      case SightType.hotel:
+        return 'hotel';
     }
   }
 }

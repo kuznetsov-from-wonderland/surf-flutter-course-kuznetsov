@@ -10,4 +10,14 @@ const Sight burjKhalifa = Sight(
   type: SightType.scyscrapper,
 );
 
-const List<Sight> sightMocks = [burjKhalifa];
+const Sight burjAlArab = Sight(
+  name: 'Burj Al Arab',
+  location: LatLng(lat: 25.1412, lgn: 55.1852),
+  url:
+      'https://c4.wallpaperflare.com/wallpaper/112/519/813/buildings-burj-al-arab-building-dubai-wallpaper-preview.jpg',
+  details:
+      'The Burj Al Arab is a luxurious 5-star hotel located in the city of Dubai, United Arab Emirates. It is designed by Architect Tom Wright. Its construction started in 1994 and completed in 1999. The constructional cost of Burj Al Arab is 1.0 Billion USD and was opened on 12 December 1999. Now it is officially run by Jumeirah Hotels and Resorts.',
+  type: SightType.hotel,
+);
+
+const List<Sight> sightMocks = [burjKhalifa, burjAlArab];
